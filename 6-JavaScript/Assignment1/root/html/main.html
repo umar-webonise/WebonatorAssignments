@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+<script src="../js/scriptmain.js"></script>
+</head> 
+<body>
+
+<div class="lineDetails">
+<form>
+EQUATION:<br>
+<input type="text" name="equation" id ="no1">
+<br>
+eg : y = mx + c.
+<br>
+STEPS:<br>
+<input type="text" name="steps" id ="no2">
+<br>
+INBOUND:<br>
+<input type="text" name="inbound" id ="no3">
+<br>
+OUTBOUND:<br>
+<input type="text" name="outbound" id ="no4">
+<br>
+<button type="button" name="draw">DRAW</button>
+<button type="button" name="reset">RESET</button>
+</form>
+
+<div id = "erros">
+
+</div>
+</div>
+
+
+
+<canvas class ="canvas" id="myCanvas" width="600" height="600" style="border:1px solid black;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+
