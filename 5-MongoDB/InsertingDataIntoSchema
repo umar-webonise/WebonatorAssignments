@@ -1,0 +1,130 @@
+//Please View mongorc.js file in this folder for the fuction definations
+
+insertQuestionData("mydb","questions",30)
+
+insertAssessmentData("mydb","assessments",4); 
+
+insertUserAnswer("mydb","user_answers",5,0);
+
+insertUserAnswer("mydb","user_answers",5,5);
+
+insertUserAnswer("mydb","user_answers",5,10);
+
+insertUserAnswer("mydb","user_answers",5,15);
+
+insertUserAssessment("mydb","user_assessments",4) 
+
+
+
+
+
+
+db.user_assessments.find() 
+{ "_id" : 0, "assessment_id" : 1, "user" : { "name" : "Umar", "email" : "umar.s@weboniselab.com" }, "answers_given" : [ 5, 6, 7, 8, 9 ] } 
+{ "_id" : 1, "assessment_id" : 1, "user" : { "name" : "Umar", "email" : "umar.s@weboniselab.com" }, "answers_given" : [ 5, 6, 7, 8, 9 ] } 
+{ "_id" : 2, "assessment_id" : 1, "user" : { "name" : "Umar", "email" : "umar.s@weboniselab.com" }, "answers_given" : [ 5, 6, 7, 8, 9 ] } 
+{ "_id" : 3, "assessment_id" : 1, "user" : { "name" : "Umar", "email" : "umar.s@weboniselab.com" }, "answers_given" : [ 5, 6, 7, 8, 9 ] } 
+
+
+db.user_assessments.update({ _id : 0 },{$set: {answers_given : [0,1,2,3,4]}},{multi:false})
+db.user_assessments.update({ _id : 1 },{$set: {answers_given : [5,6,7,8,9]}},{multi:false})
+db.user_assessments.update({ _id : 2 },{$set: {answers_given : [10,11,12,13,14]}},{multi:false})
+db.user_assessments.update({ _id : 3 },{$set: {answers_given : [15,16,17,18,19]}},{multi:false})
+
+db.user_answers.find() 
+{ "_id" : 0, "selected_options" : [ 0 ] } 
+{ "_id" : 1, "selected_options" : [ 1 ] } 
+{ "_id" : 2, "selected_options" : [ 2 ] } 
+{ "_id" : 3, "selected_options" : [ 3 ] } 
+{ "_id" : 4, "selected_options" : [ 4 ] } 
+{ "_id" : 5, "selected_options" : [ 5 ] } 
+{ "_id" : 6, "selected_options" : [ 6 ] } 
+{ "_id" : 7, "selected_options" : [ 7 ] } 
+{ "_id" : 8, "selected_options" : [ 8 ] } 
+{ "_id" : 9, "selected_options" : [ 9 ] } 
+{ "_id" : 10, "selected_options" : [ 10 ] } 
+{ "_id" : 11, "selected_options" : [ 11 ] } 
+{ "_id" : 12, "selected_options" : [ 12 ] } 
+{ "_id" : 13, "selected_options" : [ 13 ] } 
+{ "_id" : 14, "selected_options" : [ 14 ] } 
+{ "_id" : 15, "selected_options" : [ 15 ] } 
+{ "_id" : 16, "selected_options" : [ 16 ] } 
+{ "_id" : 17, "selected_options" : [ 17 ] } 
+{ "_id" : 18, "selected_options" : [ 18 ] } 
+{ "_id" : 19, "selected_options" : [ 19 ] }
+
+
+db.assessments.find(); 
+{ "_id" : 0, "content" : "Math Assessment 0", "max_marks" : 100, "min_marks" : 0, "duration" : 60, "question" : [ 0, 1, 2, 3, 4 ] } 
+{ "_id" : 1, "content" : "Math Assessment 1", "max_marks" : 100, "min_marks" : 0, "duration" : 60, "question" : [ 1, 2, 3, 4, 5 ] } 
+{ "_id" : 2, "content" : "Math Assessment 2", "max_marks" : 100, "min_marks" : 0, "duration" : 60, "question" : [ 2, 3, 4, 5, 6 ] } 
+{ "_id" : 3, "content" : "Math Assessment 3", "max_marks" : 100, "min_marks" : 0, "duration" : 60, "question" : [ 3, 4, 5, 6, 7 ] } 
+
+> db.questions.find(); 
+{ "_id" : 0, "content" : "What is the 0th number in NumberSystem??", "is_image" : false, "option" : [ 0, 1, 2, 3 ], "answer" : [ 0, 0 ] } 
+{ "_id" : 1, "content" : "What is the 1th number in NumberSystem??", "is_image" : false, "option" : [ 1, 2, 3, 4 ], "answer" : [ 1, 0 ] } 
+{ "_id" : 2, "content" : "What is the 2th number in NumberSystem??", "is_image" : false, "option" : [ 2, 3, 4, 5 ], "answer" : [ 2, 0 ] } 
+{ "_id" : 3, "content" : "What is the 3th number in NumberSystem??", "is_image" : false, "option" : [ 3, 4, 5, 6 ], "answer" : [ 3, 0 ] } 
+{ "_id" : 4, "content" : "What is the 4th number in NumberSystem??", "is_image" : false, "option" : [ 4, 5, 6, 7 ], "answer" : [ 4, 0 ] } 
+{ "_id" : 5, "content" : "What is the 5th number in NumberSystem??", "is_image" : false, "option" : [ 5, 6, 7, 8 ], "answer" : [ 5, 0 ] } 
+{ "_id" : 6, "content" : "What is the 6th number in NumberSystem??", "is_image" : false, "option" : [ 6, 7, 8, 9 ], "answer" : [ 6, 0 ] } 
+{ "_id" : 7, "content" : "What is the 7th number in NumberSystem??", "is_image" : false, "option" : [ 7, 8, 9, 10 ], "answer" : [ 7, 0 ] } 
+{ "_id" : 8, "content" : "What is the 8th number in NumberSystem??", "is_image" : false, "option" : [ 8, 9, 10, 11 ], "answer" : [ 8, 0 ] } 
+{ "_id" : 9, "content" : "What is the 9th number in NumberSystem??", "is_image" : false, "option" : [ 9, 10, 11, 12 ], "answer" : [ 9, 0 ] } 
+{ "_id" : 10, "content" : "What is the 10th number in NumberSystem??", "is_image" : false, "option" : [ 10, 11, 12, 13 ], "answer" : [ 10, 0 ] } 
+{ "_id" : 11, "content" : "What is the 11th number in NumberSystem??", "is_image" : false, "option" : [ 11, 12, 13, 14 ], "answer" : [ 11, 0 ] } 
+{ "_id" : 12, "content" : "What is the 12th number in NumberSystem??", "is_image" : false, "option" : [ 12, 13, 14, 15 ], "answer" : [ 12, 0 ] } 
+{ "_id" : 13, "content" : "What is the 13th number in NumberSystem??", "is_image" : false, "option" : [ 13, 14, 15, 16 ], "answer" : [ 13, 0 ] } 
+{ "_id" : 14, "content" : "What is the 14th number in NumberSystem??", "is_image" : false, "option" : [ 14, 15, 16, 17 ], "answer" : [ 14, 0 ] } 
+{ "_id" : 15, "content" : "What is the 15th number in NumberSystem??", "is_image" : false, "option" : [ 15, 16, 17, 18 ], "answer" : [ 15, 0 ] } 
+{ "_id" : 16, "content" : "What is the 16th number in NumberSystem??", "is_image" : false, "option" : [ 16, 17, 18, 19 ], "answer" : [ 16, 0 ] } 
+{ "_id" : 17, "content" : "What is the 17th number in NumberSystem??", "is_image" : false, "option" : [ 17, 18, 19, 20 ], "answer" : [ 17, 0 ] } 
+{ "_id" : 18, "content" : "What is the 18th number in NumberSystem??", "is_image" : false, "option" : [ 18, 19, 20, 21 ], "answer" : [ 18, 0 ] } 
+{ "_id" : 19, "content" : "What is the 19th number in NumberSystem??", "is_image" : false, "option" : [ 19, 20, 21, 22 ], "answer" : [ 19, 0 ] } 
+Type "it" for more 
+> it 
+{ "_id" : 20, "content" : "What is the 20th number in NumberSystem??", "is_image" : false, "option" : [ 20, 21, 22, 23 ], "answer" : [ 20, 0 ] } 
+{ "_id" : 21, "content" : "What is the 21th number in NumberSystem??", "is_image" : false, "option" : [ 21, 22, 23, 24 ], "answer" : [ 21, 0 ] } 
+{ "_id" : 22, "content" : "What is the 22th number in NumberSystem??", "is_image" : false, "option" : [ 22, 23, 24, 25 ], "answer" : [ 22, 0 ] } 
+{ "_id" : 23, "content" : "What is the 23th number in NumberSystem??", "is_image" : false, "option" : [ 23, 24, 25, 26 ], "answer" : [ 23, 0 ] } 
+{ "_id" : 24, "content" : "What is the 24th number in NumberSystem??", "is_image" : false, "option" : [ 24, 25, 26, 27 ], "answer" : [ 24, 0 ] } 
+{ "_id" : 25, "content" : "What is the 25th number in NumberSystem??", "is_image" : false, "option" : [ 25, 26, 27, 28 ], "answer" : [ 25, 0 ] } 
+{ "_id" : 26, "content" : "What is the 26th number in NumberSystem??", "is_image" : false, "option" : [ 26, 27, 28, 29 ], "answer" : [ 26, 0 ] } 
+{ "_id" : 27, "content" : "What is the 27th number in NumberSystem??", "is_image" : false, "option" : [ 27, 28, 29, 30 ], "answer" : [ 27, 0 ] } 
+{ "_id" : 28, "content" : "What is the 28th number in NumberSystem??", "is_image" : false, "option" : [ 28, 29, 30, 31 ], "answer" : [ 28, 0 ] } 
+{ "_id" : 29, "content" : "What is the 29th number in NumberSystem??", "is_image" : false, "option" : [ 29, 30, 31, 32 ], "answer" : [ 29, 0 ] } 
+
+
+> db.options.find() 
+{ "_id" : 0, "content" : "Is the Answer 0", "is_image" : false } 
+{ "_id" : 1, "content" : "Is the Answer 1", "is_image" : false } 
+{ "_id" : 2, "content" : "Is the Answer 2", "is_image" : false } 
+{ "_id" : 3, "content" : "Is the Answer 3", "is_image" : false } 
+{ "_id" : 4, "content" : "Is the Answer 4", "is_image" : false } 
+{ "_id" : 5, "content" : "Is the Answer 5", "is_image" : false } 
+{ "_id" : 6, "content" : "Is the Answer 6", "is_image" : false } 
+{ "_id" : 7, "content" : "Is the Answer 7", "is_image" : false } 
+{ "_id" : 8, "content" : "Is the Answer 8", "is_image" : false } 
+{ "_id" : 9, "content" : "Is the Answer 9", "is_image" : false } 
+{ "_id" : 10, "content" : "Is the Answer 10", "is_image" : false } 
+{ "_id" : 11, "content" : "Is the Answer 11", "is_image" : false } 
+{ "_id" : 12, "content" : "Is the Answer 12", "is_image" : false } 
+{ "_id" : 13, "content" : "Is the Answer 13", "is_image" : false } 
+{ "_id" : 14, "content" : "Is the Answer 14", "is_image" : false } 
+{ "_id" : 15, "content" : "Is the Answer 15", "is_image" : false } 
+{ "_id" : 16, "content" : "Is the Answer 16", "is_image" : false } 
+{ "_id" : 17, "content" : "Is the Answer 17", "is_image" : false } 
+{ "_id" : 18, "content" : "Is the Answer 18", "is_image" : false } 
+{ "_id" : 19, "content" : "Is the Answer 19", "is_image" : false } 
+Type "it" for more 
+> it 
+{ "_id" : 20, "content" : "Is the Answer 20", "is_image" : false } 
+{ "_id" : 21, "content" : "Is the Answer 21", "is_image" : false } 
+{ "_id" : 22, "content" : "Is the Answer 22", "is_image" : false } 
+{ "_id" : 23, "content" : "Is the Answer 23", "is_image" : false } 
+{ "_id" : 24, "content" : "Is the Answer 24", "is_image" : false } 
+{ "_id" : 25, "content" : "Is the Answer 25", "is_image" : false } 
+{ "_id" : 26, "content" : "Is the Answer 26", "is_image" : false } 
+{ "_id" : 27, "content" : "Is the Answer 27", "is_image" : false } 
+{ "_id" : 28, "content" : "Is the Answer 28", "is_image" : false } 
+{ "_id" : 29, "content" : "Is the Answer 29", "is_image" : false }

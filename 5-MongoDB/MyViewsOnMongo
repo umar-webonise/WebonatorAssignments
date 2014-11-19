@@ -1,0 +1,28 @@
+MongoDB
+
+As MongoDB comes under No SQL which is a very general term used to Databases like tihs.
+What I mean to say is MySQL, Oracle, DB2, and so on can be categorized as one under SQL
+with minimum difference in features.Where as if you see MongoDB and Cassandra are so 
+vastly different from each other as Mongo is a DOCUMENT DATABASES where as Cassandra is
+WIDE COLUMN STORE / COLUMN FAMILIES type.
+
+The  structure which MongoDB uses i.e Collection , Documents & key-Value pairs are very 
+flexible to define. We can store any kind of documents in the collection but that is not 
+a good practice because it becomes hard for retrieving it. So basically any one with a lesser
+knowledge can screw your data as there are no constraints.
+
+Documents in MongoDB are stored in JSON Format which is also very understandable format as 
+as compared to XML if u see.
+
+In SQL we have to write Stored Procedure which is less flexible language then JavaScript
+used in MongoDB to do similar purpose.
+
+JSON documents in Mongo do not force particular data types on attribute values.
+Mongo can be queried in a similar fashion as SQL (CURD Operation insert , update ,remove ,find)
+so implementing an SQL kind of database can be done efficently.
+
+One of the drawbacks of MongoDB that it can not support system with ACID transcations as 
+data isn't immediately written to disk upon an insert which does give high performance on write
+but might give inconsistent reads.    
+
+ 

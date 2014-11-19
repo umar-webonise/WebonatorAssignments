@@ -1,0 +1,45 @@
+Given Assessments by User document
+{
+	_id : GAssesObjectID(),
+	assessment_id : AssesObjID(),
+	user :  {
+			name : "Umar",
+			email: "umar.s@weboniselab.com",
+		},
+	answers_given : [AnswerObjID(),AnswerObjID(),AnswerObjID()...]
+}
+
+
+Centralized Collection of Assessments document
+{
+	_id : AssessObjID(),
+	max_marks: 100,
+	min_marks: 0,
+	duration: 60,
+	questions : [QuestionObjID(),QuestionObjID(),QuestionObjID()...]	
+}
+
+
+Centralized Collection of Question document
+{
+	_id : QuestionObjID(),
+	contents : "Content_Value",
+	is_image : true or false,
+	options : [OptionObjID(),OptionObjID(),OptionObjID()...]
+	answers : [OptionObjID(),OptionObjID(),OptionObjID()...]
+}
+
+Centralized Collection of Options document
+{
+	_id : OptionObjID(),	
+	contents : "Content_Value",
+	is_image : true or false,
+}
+
+
+User Answer Storage Document
+{
+	_id : AnswerObjID(),
+	selected_options : [OptionObjID(),OptionObjID(),OptionObjID(),...]
+
+}

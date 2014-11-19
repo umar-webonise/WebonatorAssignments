@@ -1,0 +1,49 @@
+j = { name : "mongo" }
+k = { x : 3 }
+l= {x : 3 array_elements : [1,2,3,4]}
+
+db.testData.insert( j )
+db.testData.insert( k )
+db.testData.insert( l )
+
+insertData("test", "testData", 100)
+
+db.testData.find( { x : 18 } )
+
+
+var c = db.testData.find()
+while ( c.hasNext() ) printjson( c.next() )
+
+db.testData.update(
+   { x: 10 },
+   {
+      x: 10,
+      y: 10	
+   },
+   { upsert: true }
+)
+
+db.testData.remove({ x: 20 })
+
+db.testData.remove({})
+
+//---------------------------------------------------------------
+
+db.user_assessments.update({ _id : 0 },{$set: {answers_given : [0,1,2,3,4]}},{multi:false})
+db.user_assessments.aggregate({$match : {assessment_id : 1}},{$group : {_id : "$_id",total : { $sum:"$score"}}})
+
+//-----------------------------------------------------------------
+
+db.inventory.find( { type: { $in: [ 'food', 'snacks' ] } } )
+
+db.inventory.find( { type: 'food', price: { $lt: 9.95 } } )
+
+
+db.inventory.find(
+   {
+     type: 'food',
+     $or: [ { qty: { $gt: 100 } }, { price: { $lt: 9.95 } } ]
+   }
+)
+
+//------------------------------------------------------
