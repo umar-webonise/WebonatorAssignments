@@ -1,0 +1,6 @@
+Requirement of VIRTUAL UNIVERSITY
+
+1.System show  AcademicPrograms content which is Courses and its Details
+2.Library with respect to material type eBooks, Videos and Handouts 
+3.New and Announcment Section
+4.Query Board

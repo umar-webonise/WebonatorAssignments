@@ -1,0 +1,20 @@
+PROBLEM STATMENTS
+
+Academic Program
+1.Different genric Courses are there such as Masters , Bachelor, Diploma & Certificate Courses
+2.Different Fees Structure and Contents
+
+Study Material Library
+1.Create different types of Library as per the Type of study materials contained in it on request(eBooks Videos & Hnadouts).
+2.generate a Bean Class of type Library.
+
+
+New and Announcement
+1. Create a New and Announcement board with different User having different functionality over it.
+
+Query Handler
+1.An interactive forum where Students post query.
+2.Query should be answered either by Professor or Administrator.
+
+University
+1. To contain all the requirements in the from of modules
