@@ -1,0 +1,7 @@
+#!/bin/bash
+# SubTask2
+
+
+var="$(find $HOME -name 7-LinuxUnix)"
+cd $var
+rename -v 's/.txt$/-rename.txt/' *.txt

@@ -1,0 +1,16 @@
+#!/bin/bash
+# My first script
+echo "LOG TIME":`date` > assignment.log
+echo "HOST NAME: "$HOSTNAME >>	 assignment.log
+echo "OS: "`uname -s` >> assignment.log
+echo "Version: "`uname -r` >> assignment.log
+echo "Full PATH for HOME: "$HOME >> assignment.log
+echo "Current Users Logged IN: "`users`	 >> assignment.log
+echo "Your Groups: "`id -un | groups` >> assignment.log
+echo "" >> assignment.log
+echo "----List of All the files in HOME and its SubDirectories----" >> assignment.log
+echo "" >> assignment.log
+ls -pR | grep -v />> assignment.log
+echo "View assignment.log file"
+
+
