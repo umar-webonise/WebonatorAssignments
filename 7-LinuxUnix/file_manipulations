@@ -1,0 +1,54 @@
+#!/bin/bash
+# Test Script
+
+
+assignment_location="$(find $HOME -name 7-LinuxUnix)"
+cd $assignment_location
+
+echo " " > $HOME/assignment.log
+
+#rename -v 's/.txt$/-rename.txt/' *.txt
+for old_file_name in *.txt;
+do
+	echo "Enter New Name for $old_file_name"
+	read new_file_name
+	mv $old_file_name $new_file_name 
+	echo "LOG TIME":`date` >> $HOME/assignment.log
+	echo "$old_file_name renamed $new_file_name"
+	echo "$old_file_name renamed $new_file_name" >>$HOME/assignment.log
+done
+
+#rename -v 's/x/x-rename-/' x*
+for old_file_name in x*;
+do
+	echo "Enter New Name for $old_file_name"
+	read new_file_name
+	mv $old_file_name $new_file_name
+	echo "LOG TIME":`date` >> $HOME/assignment.log
+	echo "$old_file_name renamed $new_file_name"
+	echo "$old_file_name renamed $new_file_name" >>$HOME/assignment.log
+done
+	
+mkdir public_html
+cd public_html
+
+touch readme.txt
+chmod 777 readme.txt #rwx for all 
+echo "Hello World I am Read me" > readme.txt
+
+cd ..
+
+for file_move in `ls -p | grep -m 4 -v /`; 
+do
+	mv $file_move $assignment_location/public_html 
+done
+
+cd public_html
+mkdir public_html
+find -type f -exec cp {} ./public_html \;
+
+echo "Enter New Name for public_html"
+read new_directory_name
+mv public_html $new_directory_name
+
+
