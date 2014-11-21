@@ -2,8 +2,7 @@
 # My first script
 echo "LOG TIME":`date` > $HOME/assignment.log
 echo "HOST NAME: "$HOSTNAME >> $HOME/assignment.log
-echo "OS: "`uname -s` >> $HOME/assignment.log
-echo "Version: "`uname -r` >> $HOME/assignment.log
+echo "OS "`lsb_release -d` >> $HOME/assignment.log
 echo "Full PATH for HOME: "$HOME >> $HOME/assignment.log
 echo "Current Users Logged IN: "`users`	 >> $HOME/assignment.log
 echo "Your Groups: "`id -un | groups` >> $HOME/assignment.log
