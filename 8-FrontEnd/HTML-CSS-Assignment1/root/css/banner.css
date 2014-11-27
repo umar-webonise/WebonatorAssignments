@@ -25,7 +25,7 @@
 #content {
 	padding-left: 80px;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 	padding-right: 80px;
 	font-family: Arial;
 	font-size: 14px;
@@ -75,7 +75,7 @@ li ,#copy_write {
 	vertical-align: -27px;
 }
 
-#copy{
+#copy_write_container{
 	float: right;
 	padding-right: 80px;
 }
