@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+@font-face {
+    
+    font-family: SrcSanProLight;
+    src: url("../font/source-sans-pro/SourceSansPro-Light.otf");
+}
+
+@font-face {
+	font-family: SrcSanProBold;
+    src: url("../font/source-sans-pro/SourceSansPro-Bold.otf");
+}
+
+
+.container {
+	width: 940px;
+	margin: auto;
+}
+
+#navigation {
+	height: 50px;
+	background-color:#444444;
+	font-size: 18px;
+	line-height: 50px;
+	font-family: SrcSanProBold;
+}
+
+
+
+#navigation li{
+	list-style-type: none;
+	border-right: 1px solid #333333;
+	height: 50px;
+}
+
+#navigation img,#navigation li{
+	float: left;
+}
+
+#navigation img{
+	margin-top: 9px;
+}
+
+
+#header {
+	background-image: url("../images/background.jpg");
+	height: 486px;
+}
+
+#header h1{
+	font-size: 48px;
+	font-family: SrcSanProBold;
+	color: white;
+}
+
+#header h2{
+	font-size: 36px;
+	font-family: SrcSanProLight;
+	color: white;
+}
+
+.button{
+	float:left;
+	width: 170px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 47px;
+	font-family: SrcSanProBold;
+	border-radius: 3px;
+	margin-right:21px;
+	margin-top: 47px;
+}
+
+.buttonTypeOne{
+	background-color: #f2f2f2;
+	color: #222222;
+}
+
+.buttonTypeTwo{
+	background-color: #ff9900;
+	color: #ffffff;
+}
+
+
+div.bannerContent{
+	padding-top: 188px;
+	float: left;
+}
+
+#contents{
+	background-color: #ffffff;
+	text-align: center;
+}
+
+#contents h1{
+	padding-top: 64px;
+	font-size: 36px;
+	line-height: 40px;
+	font-family: SrcSanProBold;
+	color: #444444;
+}
+
+.artOpperations{
+	margin-left: 5px;
+	margin-top: 76px;
+}
+
+.artOpperations li{
+	list-style-type: none;
+	float: left;
+	margin-left: 75px;
+	width:140px;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: SrcSanProLight;
+
+}
+
+
+.artOpperations div{
+	
+	height: 140px;
+	border-radius: 70px;
+	background-color: #efefef;
+}
+
+.artOpperations img{
+	margin-top: 49px;
+}
+
+.clear{
+	clear: both;
+}
+
+#footer{
+	background-color: #ececec;
+	font-family: SrcSanProBold;
+}
+
+#footer li{
+	float: left;
+	list-style-type: none;
+}
+
+.socailIcons div{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #888888;
+}
+
+#footer img{
+	padding: 4px;
+}
+
+.socailIcons{
+	float: right;
+}
+
+
+a {
+	text-decoration: none;
+	color:#aaaaaa;
+}
+
+a:hover {
+	color:blue;
+}
