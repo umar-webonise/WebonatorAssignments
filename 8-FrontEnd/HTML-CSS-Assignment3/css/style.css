@@ -3,16 +3,14 @@
 	padding: 0;
 }
 
-
 @font-face {
-    
     font-family: SrcSanProLight;
     src: url("../font/source-sans-pro/SourceSansPro-Light.otf");
 }
 
 @font-face {
 	font-family: SrcSanProBold;
-    src: url("../font/source-sans-pro/SourceSansPro-Bold.otf");
+	src: url("../font/source-sans-pro/SourceSansPro-Bold.otf");
 }
 
 
@@ -32,12 +30,12 @@
 
 
 #navigation li{
-	list-style-type: none;
 	border-right: 1px solid #333333;
 	height: 50px;
+	padding:0px 20px;
 }
 
-#navigation img,#navigation li{
+#navigation img{
 	float: left;
 }
 
@@ -71,8 +69,7 @@
 	line-height: 47px;
 	font-family: SrcSanProBold;
 	border-radius: 3px;
-	margin-right:21px;
-	margin-top: 47px;
+	margin:47px 21px 0px 0px;
 }
 
 .buttonTypeOne{
@@ -84,7 +81,6 @@
 	background-color: #ff9900;
 	color: #ffffff;
 }
-
 
 div.bannerContent{
 	padding-top: 188px;
@@ -105,13 +101,10 @@ div.bannerContent{
 }
 
 .artOpperations{
-	margin-left: 5px;
-	margin-top: 76px;
+	margin:76px 0px 0px 5px;
 }
 
 .artOpperations li{
-	list-style-type: none;
-	float: left;
 	margin-left: 75px;
 	width:140px;
 	font-size: 16px;
@@ -122,7 +115,6 @@ div.bannerContent{
 
 
 .artOpperations div{
-	
 	height: 140px;
 	border-radius: 70px;
 	background-color: #efefef;
@@ -139,11 +131,11 @@ div.bannerContent{
 #footer{
 	background-color: #ececec;
 	font-family: SrcSanProBold;
+	padding-top:30px;
 }
 
-#footer li{
+.rights{
 	float: left;
-	list-style-type: none;
 }
 
 .socailIcons div{
@@ -161,12 +153,45 @@ div.bannerContent{
 	float: right;
 }
 
+.socailIcons li{
+	margin-left: 10px;
+}
+
+
+
+.rights, .lowerMenu{
+	color:#aaaaaa;
+	margin-right:20px;
+	font-size:14px;
+	line-height:18px;
+}
+
+.menu a{
+	color:#ff9900;
+	font-size:16px;
+	line-height:20px;
+	margin-left:10px;
+}
+
 
 a {
 	text-decoration: none;
 	color:#aaaaaa;
 }
 
+li {
+	list-style-type: none;
+	float: left;
+}
+
 a:hover {
 	color:blue;
+}
+
+.contentsClear{
+	height:118px;
+}
+
+.footerClear{
+	height:87px;
 }
