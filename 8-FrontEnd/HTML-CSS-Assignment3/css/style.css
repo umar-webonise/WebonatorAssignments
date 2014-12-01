@@ -3,173 +3,6 @@
 	padding: 0;
 }
 
-@font-face {
-    font-family: SrcSanProLight;
-    src: url("../font/source-sans-pro/SourceSansPro-Light.otf");
-}
-
-@font-face {
-	font-family: SrcSanProBold;
-	src: url("../font/source-sans-pro/SourceSansPro-Bold.otf");
-}
-
-
-.container {
-	width: 940px;
-	margin: auto;
-}
-
-#navigation {
-	height: 50px;
-	background-color:#444444;
-	font-size: 18px;
-	line-height: 50px;
-	font-family: SrcSanProBold;
-}
-
-
-
-#navigation li{
-	border-right: 1px solid #333333;
-	height: 50px;
-	padding:0px 20px;
-}
-
-#navigation img{
-	float: left;
-	margin-top: 9px;
-}
-
-#header {
-	background-image: url("../images/background.jpg");
-	height: 486px;
-}
-
-#header h1{
-	font-size: 48px;
-	font-family: SrcSanProBold;
-	color: white;
-}
-
-#header h2{
-	font-size: 36px;
-	font-family: SrcSanProLight;
-	color: white;
-}
-
-.button{
-	float:left;
-	width: 170px;
-	text-align: center;
-	font-size: 20px;
-	line-height: 47px;
-	font-family: SrcSanProBold;
-	border-radius: 3px;
-	margin:47px 21px 0px 0px;
-}
-
-.buttonTypeOne{
-	background-color: #f2f2f2;
-	color: #222222;
-}
-
-.buttonTypeTwo{
-	background-color: #ff9900;
-	color: #ffffff;
-}
-
-div.bannerContent{
-	padding-top: 188px;
-	float: left;
-}
-
-#contents{
-	background-color: #ffffff;
-	text-align: center;
-}
-
-#contents h1{
-	padding-top: 64px;
-	font-size: 36px;
-	line-height: 40px;
-	font-family: SrcSanProBold;
-	color: #444444;
-}
-
-.artOpperations{
-	margin:76px 0px 0px 5px;
-}
-
-.artOpperations li{
-	margin-left: 75px;
-	width:140px;
-	font-size: 16px;
-	line-height: 20px;
-	font-family: SrcSanProLight;
-
-}
-
-
-.artOpperations div{
-	height: 140px;
-	border-radius: 70px;
-	background-color: #efefef;
-}
-
-.artOpperations img{
-	margin-top: 49px;
-}
-
-.clear{
-	clear: both;
-}
-
-#footer{
-	background-color: #ececec;
-	font-family: SrcSanProBold;
-	padding-top:30px;
-}
-
-.rights{
-	float: left;
-}
-
-.socailIcons div{
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	background-color: #888888;
-}
-
-#footer img{
-	padding: 4px;
-}
-
-.socailIcons{
-	float: right;
-}
-
-.socailIcons li{
-	margin-left: 10px;
-}
-
-
-
-.rights, .lowerMenu{
-	color:#aaaaaa;
-	margin-right:20px;
-	font-size:14px;
-	line-height:18px;
-}
-
-.menu a{
-	color:#ff9900;
-	font-size:16px;
-	line-height:20px;
-	margin-left:10px;
-}
-
-
 a {
 	text-decoration: none;
 	color:#aaaaaa;
@@ -184,10 +17,170 @@ a:hover {
 	color:blue;
 }
 
-.contentsClear{
-	height:118px;
+
+@font-face {
+    font-family: SrcSanProLight;
+    src: url("../font/source-sans-pro/SourceSansPro-Light.otf");
 }
 
-.footerClear{
-	height:87px;
+@font-face {
+	font-family: SrcSanProBold;
+	src: url("../font/source-sans-pro/SourceSansPro-Bold.otf");
 }
+
+.container {
+	width: 940px;
+	margin: auto;
+}
+
+.clearFix {
+	float: none;
+	clear: both;
+}
+
+#header {
+	background-color:#444444;
+}
+
+a.navigation {
+	font-size: 18px;
+	line-height: 50px;
+	font-family: SrcSanProBold;
+	padding:0px 25px;
+	border-right: 1px solid #333333;
+	display: block;
+}
+
+ #header li:first-child{
+ 	border-left: 1px solid #333333;
+ }
+
+
+a.artforthLogo{
+	background-image: url("../images/logo_artforth.png");
+	width: 136px;
+	height: 32px;
+	float: left;
+	margin:9px 54px 0 0;
+}
+
+#banner {
+	background-image: url("../images/background.jpg");
+	padding: 7px 0 17px 0;
+}
+
+#banner h1{
+	font-size: 48px;
+	font-family: SrcSanProBold;
+	color: white;
+}
+
+#banner h2{
+	font-size: 36px;
+	font-family: SrcSanProLight;
+	color: white;
+}
+
+a.button{
+	float:left;
+	width: 170px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 47px;
+	font-family: SrcSanProBold;
+	border-radius: 3px;
+	margin:47px 21px 0px 0px;
+	display: block;
+}
+
+.viewGallery{
+	background-color: #f2f2f2;
+	color: #222222;
+}
+
+.joinNow{
+	background-color: #ff9900;
+	color: #ffffff;
+}
+
+div.bannerContent{
+	margin-top: 181px;
+	float: left;
+}
+
+#contents{
+	background-color: #ffffff;
+	text-align: center;
+	margin-top: 62px;
+}
+
+#contents h1{
+	font-size: 36px;
+	line-height: 40px;
+	font-family: SrcSanProBold;
+	color: #444444;
+	margin-bottom: 74px;
+}
+
+li.artActivities{
+	margin-left:75px;
+	width:140px;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: SrcSanProLight;
+}
+
+a.artActImageCircle {
+	height: 140px;
+	padding-top: 45px;
+	border-radius: 70px;
+	background-color: #efefef;
+	display: block;
+	box-sizing: border-box;
+}
+
+
+
+#footer{
+	background-color: #ececec;
+	margin-top: 118px;
+	font-family: SrcSanProBold;
+	padding: 30px 0 83px;
+}
+
+
+.menu a{
+	color:#ff9900;
+	font-size:16px;
+	line-height:20px;
+	margin-left:17px;
+}
+
+ul.socailIcons{
+	float: right;
+}
+
+.socailIcons a{
+	width: 30px;
+	height: 30px;
+	margin-left: 7px;
+	border-radius: 15px;
+	background-color: #888888;
+	padding: 4px;
+	display: block;
+	box-sizing: border-box;
+}
+
+div.copyRights, ul.siteOppMenu {
+	float: left;
+	color:#aaaaaa;
+	margin-right:61px;
+	font-size:14px;
+	line-height:18px;
+}
+
+
+
+
+
+
