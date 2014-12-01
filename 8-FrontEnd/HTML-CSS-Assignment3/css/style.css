@@ -13,11 +13,6 @@ li {
 	float: left;
 }
 
-a:hover {
-	color:blue;
-}
-
-
 @font-face {
     font-family: SrcSanProLight;
     src: url("../font/source-sans-pro/SourceSansPro-Light.otf");
@@ -51,9 +46,13 @@ a.navigation {
 	display: block;
 }
 
- #header li:first-child{
+a:hover.navigation,.siteOppMenu a:hover  { 
+    color: #ff9900;
+}
+
+#header li:first-child{
  	border-left: 1px solid #333333;
- }
+}
 
 
 a.artforthLogo{
@@ -137,9 +136,8 @@ a.artActImageCircle {
 	background-color: #efefef;
 	display: block;
 	box-sizing: border-box;
+	margin-bottom: 24px;
 }
-
-
 
 #footer{
 	background-color: #ececec;
@@ -147,7 +145,6 @@ a.artActImageCircle {
 	font-family: SrcSanProBold;
 	padding: 30px 0 83px;
 }
-
 
 .menu a{
 	color:#ff9900;
@@ -167,8 +164,12 @@ ul.socailIcons{
 	border-radius: 15px;
 	background-color: #888888;
 	padding: 4px;
-	display: block;
 	box-sizing: border-box;
+	display: block;
+}
+
+.socailIcons a:hover  { 
+    background-color: #ff9900;
 }
 
 div.copyRights, ul.siteOppMenu {
@@ -178,9 +179,3 @@ div.copyRights, ul.siteOppMenu {
 	font-size:14px;
 	line-height:18px;
 }
-
-
-
-
-
-
