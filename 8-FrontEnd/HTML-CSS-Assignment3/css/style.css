@@ -8,8 +8,11 @@ a {
 	color:#aaaaaa;
 }
 
-li {
+li{
 	list-style-type: none;
+}
+
+li ,ul,a.artforthLogo,div.imgWrapper,div.bannerContent,a.button,div.copyRights{
 	float: left;
 }
 
@@ -30,6 +33,11 @@ li {
 }
 
 .clearFix {
+	width: 0px;
+	height: 0px;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
 	float: none;
 	clear: both;
 }
@@ -38,7 +46,7 @@ li {
 	background-color:#444444;
 }
 
-a.navigation {
+.navigation a {
 	font-size: 18px;
 	line-height: 50px;
 	font-family: SrcSanProBold;
@@ -60,7 +68,6 @@ a.artforthLogo{
 	background-image: url("../images/logo_artforth.png");
 	width: 136px;
 	height: 32px;
-	float: left;
 	margin:9px 54px 9px 0;
 }
 
@@ -79,22 +86,22 @@ a.artforthLogo{
 	font-size: 36px;
 	font-family: SrcSanProLight;
 	color: white;
+	margin-bottom: 47px;
 }
 
 a.button{
-	float:left;
 	width: 170px;
 	text-align: center;
 	font-size: 20px;
 	line-height: 47px;
 	font-family: SrcSanProBold;
 	border-radius: 3px;
-	margin:47px 21px 0px 0px;
 	display: block;
 }
 
 .viewGallery{
 	background-color: #f2f2f2;
+	margin-right: 21px;
 	color: #222222;
 }
 
@@ -105,7 +112,11 @@ a.button{
 
 div.bannerContent{
 	margin-top: 181px;
-	float: left;
+}
+
+div.imgWrapper{
+	width: 484px;
+	height: 462px;
 }
 
 #contents{
@@ -122,36 +133,41 @@ div.bannerContent{
 	margin-bottom: 74px;
 }
 
-li.artActivities{
-	margin-left:75px;
-	width:140px;
-	font-size: 16px;
+ul.artActivities{
+	float: none;
+	margin-left: 43px;
+}
+
+.artActivities li{
+	margin-left:40px;
+	width:174px;
+	font-size:18px;
 	line-height: 20px;
 	font-family: SrcSanProLight;
 }
 
-a.artActImageCircle {
+.artActivities div{
+	width: 140px;
 	height: 140px;
 	padding-top: 45px;
 	border-radius: 70px;
 	background-color: #efefef;
-	display: block;
 	box-sizing: border-box;
-	margin-bottom: 24px;
+	margin:auto auto 24px;
 }
 
 #footer{
 	background-color: #ececec;
-	margin-top: 118px;
+	margin-top: 116px;
 	font-family: SrcSanProBold;
-	padding: 30px 0 83px;
+	padding: 20px 0 83px;
 	box-shadow: 0px -1px 5px rgba(0,0,0,0.2);
 }
 
 .menu a{
 	color:#ff9900;
 	font-size:16px;
-	line-height:20px;
+	line-height:16px;
 	margin-left:17px;
 }
 
@@ -159,31 +175,61 @@ ul.socailIcons{
 	float: right;
 }
 
-ul.menu,div.copyRights, ul.siteOppMenu {
-	float: left;
+ul.menu {
+	margin-top: 10px;	
 }
 
 .socailIcons li{
 	margin-left: 7px;
+	width: 30px;
+	height: 30px;
 }
 
 .socailIcons a{
-	width: 30px;
-	height: 30px;
 	background-repeat: no-repeat;
 	background-color: #888888;
 	border-radius: 15px;
 	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
 	display: block;
+}
+
+.facebookLogo a{
+	background-image:url("../images/logo_facebook.png");
+}
+
+.twitterLogo a{
+	background-image:url("../images/logo_twitter.png");
+}
+
+.pinLogo a{
+	background-image:url("../images/logo_p.png");
+}
+
+.googleLogo a{
+	background-image:url("../images/logo_google_plus.png");
 }
 
 .socailIcons a:hover  { 
     background-color: #ff9900;
 }
 
+.siteOppMenu li{
+	border-left: 3px solid rgba(0,0,0,0.2);	
+}
+
+.siteOppMenu li:first-child{
+ 	border-left: 0px;
+}
+
+.siteOppMenu a {
+	margin: 0px 10px;
+}
+
 div.copyRights, ul.siteOppMenu {
 	color:#aaaaaa;
-	margin-right:61px;
+	margin:13px 51px 0 0;
 	font-size:14px;
-	line-height:18px;
+	line-height:14px;
 }
