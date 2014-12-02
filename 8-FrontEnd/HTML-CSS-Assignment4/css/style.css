@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+li ,ul,a.ramojiLogo {
+	float: left;
+}
+
+.container {
+	width: 940px;
+	margin: auto;
+}
+
+.clearFix {
+	width: 0px;
+	height: 0px;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	float: none;
+	clear: both;
+}
+
+#header {
+	background-color: #ffffff;
+	padding:6px 0 4px 0px;
+	font-family:arial,helvetica,"sans-serif";
+}
+
+a.ramojiLogo{
+	width:120px;
+	height:45px;
+	background-image: url("../images/ramoji_logo.png");
+	display: block;
+}
+
+ul.navigation, ul.socailIcons,div.rightArrowImg{
+	float: right;
+}
+
+.navigation a{
+	color:#ff0000;
+}
+
+.socailIcons{
+	margin: 10px 0 0 11px;
+}
+
+.socailIcons li{
+	margin-left: 6px;
+	width: 24px;
+	height: 24px;
+}
+
+.socailIcons a{
+	background-repeat: no-repeat;
+	background-color: #ec171f;
+	border-radius: 12px;
+	box-sizing: border-box;
+	width: 24px;
+	height: 24px;
+	display: block;
+}
+
+.facebookLogo a{
+	background-image:url("../images/logo_facebook.png");
+}
+
+.twitterLogo a{
+	background-image:url("../images/logo_twitter.png");
+}
+
+.pinLogo a{
+	background-image:url("../images/logo_p.png");
+}
+
+.googleLogo a{
+	background-image:url("../images/logo_google_plus.png");
+}
+
+ul.navigation{
+	margin-top: 18px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.navigation li{
+	margin-right: 25px;
+}
+
+#banner {
+	background-color: #000000;
+	color: white;
+}
+
+div.bannerContent{
+	background-image:url("../images/wedding_bg.jpg");
+	background-repeat: no-repeat;
+	padding:1px;
+}
+
+div.themesNavigation{
+	background-color: #ff0000;
+	padding:20px 0;
+}
+
+div.textContent{
+	margin: 440px 0 30px 0;
+}
+
+div.textContent h1{
+	font-family:arial,helvetica,"sans-serif";
+	font-size: 44px;
+	line-height: 46px;
+}
+
+div.textContent h2{
+	font-family:"minion-pro",times,serif;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.themesNavigation li{
+	margin-left: 19px;
+}
+
+.themesNavigation li:first-child {
+	margin-left: 0px;
+}
+
+.themesNavigation a{
+	color:#ffffff;
+	font-size: 22px;
+	line-height: 24px;
+	font-family:arial,helvetica,"sans-serif";
+	border:2px solid #ffffff;
+	width: 184px;
+	border-radius: 5px;
+	padding: 15px 13px 15px 19px;
+	display: block;
+}
+
+div.rightArrowImg{
+	width: 25px;
+	height: 25px;
+	background-image: url("../images/go_icon.png");
+	background-repeat: no-repeat;
+}
+
