@@ -13,6 +13,7 @@ li {
 	float: left;
 }
 
+
 @font-face {
     font-family: SrcSanProLight;
     src: url("../font/source-sans-pro/SourceSansPro-Light.otf");
@@ -158,14 +159,15 @@ ul.socailIcons{
 	float: right;
 }
 
-
+ul.menu,div.copyRights, ul.siteOppMenu {
+	float: left;
+}
 
 .socailIcons li{
 	margin-left: 7px;
 }
 
 .socailIcons a{
-	
 	width: 30px;
 	height: 30px;
 	background-repeat: no-repeat;
@@ -180,7 +182,6 @@ ul.socailIcons{
 }
 
 div.copyRights, ul.siteOppMenu {
-	float: left;
 	color:#aaaaaa;
 	margin-right:61px;
 	font-size:14px;
