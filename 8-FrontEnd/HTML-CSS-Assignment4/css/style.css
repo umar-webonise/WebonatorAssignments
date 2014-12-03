@@ -104,6 +104,7 @@ ul.navigation{
 #banner {
 	background: #000000 no-repeat url("../images/wedding_bg.jpg") center top;
 	color: #ffffff;
+
 }
 
 #banner .container{
@@ -283,8 +284,12 @@ a:hover{
 }
 
 .navigation a:hover{
-	color: #ffffff;
+	color: #fff;
 	background-color: #ff0000;
+}
+
+.themesNavigation li :hover{
+	background: #ffffff url("../images/go_icon_red.png") no-repeat right 15px center;
 }
 
 .facebookLogo :hover{
