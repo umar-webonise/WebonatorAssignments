@@ -20,7 +20,7 @@ li ,ul,a.ramojiLogo {
 	margin: auto;
 }
 
-.clearFix {
+.clearFix ,ul.eventList li.clearFix, #footer ul.footerNavigation li.clearFix {
 	width: 0px;
 	height: 0px;
 	border: 0px;
@@ -143,6 +143,7 @@ div.textContent h2{
 	font-size: 22px;
 	line-height: 24px;
 	font-family:arial,helvetica,"sans-serif";
+	font-weight: lighter;
 	border:2px solid #ffffff;
 	width: 184px;
 	border-radius: 5px;
@@ -157,3 +158,108 @@ div.rightArrowImg{
 	background-repeat: no-repeat;
 }
 
+#content {
+	background-color: #ffffff;
+	margin-top: 66px;
+}
+
+#content h1{
+	font-family:arial,helvetica,"sans-serif";
+	color: #ff0000;
+	margin-bottom: 24px;
+}
+
+ul.eventList{
+	float: none;
+	color: #ffffff;
+}
+
+ul.eventList h2{
+	font-size: 18px;
+	line-height: 20px;
+	font-family:arial,helvetica,"sans-serif";
+	margin-bottom: 10px;
+}
+
+ul.eventList h3{
+	font-size: 11px;
+	line-height: 13px;
+	font-family:arial,helvetica,"sans-serif";
+	font-weight: normal;
+	margin:10px 0 5px;
+}
+
+ul.eventList li{
+	width: 300px;
+	background-color: #000000;
+	margin-left: 20px;
+	padding-bottom: 21px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+ul.eventList li:first-child ,#footer li.eventTypeList:first-child {
+	margin-left: 0px;
+}
+
+
+ul.eventList div{
+	width: 300px;
+	height: 200px;
+}
+
+
+#footer {
+	color:#ffffff;
+	background-color: #444444;
+	padding: 29px 0 128px;
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 16px;
+	font-family:"minion-pro",times,serif;
+	text-align: center;
+	box-shadow: 0px -1px 5px rgba(0,0,0,0.3);
+}
+
+ul.eventType{
+	padding-bottom: 30px;
+	border-bottom: 1px solid #535353;
+	text-align: left;
+}
+
+#footer ul,#footer li {
+	float: none;
+}
+
+
+#footer li.eventTypeList {
+	float: left;
+	width: 162px;
+	margin-left: 28px;
+}
+
+li.eventTypeList li:first-child {
+	font-family:arial,helvetica,"sans-serif";
+	font-weight: bold;
+	line-height: 20px;
+	padding-left: 10px;
+	color: grey;
+	
+}
+
+li.eventTypeList li.firstExtOffer{
+	margin-top: 10px;
+}
+
+ul.footerNavigation{
+	margin: 0 auto;
+}
+
+#footer ul.footerNavigation li{
+	float: left;
+	border-left: 1px solid #ffffff;
+	padding: 0 5px;
+}
+#footer ul.footerNavigation li:first-child{
+	border: 0;
+	padding-left: 0px;
+}
