@@ -44,7 +44,7 @@ a.ramojiLogo{
 	display: block;
 }
 
-ul.navigation, ul.socailIcons,div.rightArrowImg{
+ul.navigation, ul.socailIcons,span.rightArrowImg{
 	float: right;
 }
 
@@ -60,31 +60,34 @@ ul.navigation, ul.socailIcons,div.rightArrowImg{
 	margin-left: 6px;
 	width: 24px;
 	height: 24px;
+	border-radius: 12px;
+	background-color: #ff0000;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
 }
 
 .socailIcons a{
-	background-repeat: no-repeat;
-	background-color: #ff0000;
-	border-radius: 12px;
-	box-sizing: border-box;
-	width: 24px;
 	height: 24px;
 	display: block;
 }
 
-.facebookLogo a{
+.socailIcons li:hover{
+	background-color: #000000;
+}
+
+.facebookLogo {
 	background-image:url("../images/logo_facebook.png");
 }
 
-.twitterLogo a{
+.twitterLogo {
 	background-image:url("../images/logo_twitter.png");
 }
 
-.pinLogo a{
+.pinLogo {
 	background-image:url("../images/logo_p.png");
 }
 
-.googleLogo a{
+.googleLogo {
 	background-image:url("../images/logo_google_plus.png");
 }
 
@@ -99,23 +102,23 @@ ul.navigation{
 }
 
 #banner {
-	background-color: #000000;
-	color: white;
+	background: #000000 no-repeat url("../images/wedding_bg.jpg") center top;
+	color: #ffffff;
 }
 
-div.bannerContent{
-	background-image:url("../images/wedding_bg.jpg");
-	background-repeat: no-repeat;
-	padding:1px;
+#banner .container{
+	position: relative;
+	height: 545px;
+}
+
+.textContent {
+	position: absolute;
+	bottom: 30px;
 }
 
 div.themesNavigation{
 	background-color: #ff0000;
 	padding:20px 0;
-}
-
-div.textContent{
-	margin: 440px 0 30px 0;
 }
 
 div.textContent h1{
@@ -124,7 +127,7 @@ div.textContent h1{
 	line-height: 46px;
 }
 
-div.textContent h2{
+div.textContent p{
 	font-family:"minion-pro",times,serif;
 	font-weight: normal;
 	font-size: 22px;
@@ -133,6 +136,15 @@ div.textContent h2{
 
 .themesNavigation li{
 	margin-left: 19px;
+	color:#ffffff;
+	font-size: 22px;
+	line-height: 24px;
+	font-family:arial,helvetica,"sans-serif";
+	font-weight: lighter;
+	border:2px solid #ffffff;
+	background: url("../images/go_icon.png") no-repeat right 15px center;
+	width:216px;
+	border-radius: 5px;
 }
 
 .themesNavigation li:first-child {
@@ -140,32 +152,20 @@ div.textContent h2{
 }
 
 .themesNavigation a{
-	color:#ffffff;
-	font-size: 22px;
-	line-height: 24px;
-	font-family:arial,helvetica,"sans-serif";
-	font-weight: lighter;
-	border:2px solid #ffffff;
-	width: 184px;
-	border-radius: 5px;
 	padding: 15px 13px 15px 19px;
 	display: block;
 }
 
-div.rightArrowImg{
-	width: 25px;
-	height: 25px;
-	background-image: url("../images/go_icon.png");
-	background-repeat: no-repeat;
-}
+
 
 #content {
 	background-color: #ffffff;
 	margin-top: 66px;
 }
 
-#content h1{
+#content h2{
 	font-family:arial,helvetica,"sans-serif";
+	font-size: 40px;
 	color: #ff0000;
 	margin-bottom: 24px;
 }
@@ -175,21 +175,18 @@ ul.eventList{
 	color: #ffffff;
 }
 
-ul.eventList h2{
+ul.eventList h3{
 	font-size: 18px;
 	line-height: 20px;
-	font-family:arial,helvetica,"saa:hover{
-	color: #ff0000;
-}ns-serif";
-	margin-bottom: 10px;
+	font-family:arial,helvetica,"sans-serif";
+	margin:5px 0 10px;
 }
 
-ul.eventList h3{
+ul.eventList span{
 	font-size: 11px;
 	line-height: 13px;
 	font-family:arial,helvetica,"sans-serif";
 	font-weight: normal;
-	margin:10px 0 5px;
 }
 
 ul.eventList li{
@@ -205,9 +202,12 @@ ul.eventList li:first-child ,#footer li.eventTypeList:first-child {
 }
 
 
-ul.eventList div{
+div.gallaryImg{
 	width: 300px;
 	height: 200px;
+}
+div.gallaryTxt{
+	margin:19px 0 0 14px;
 }
 
 
@@ -215,22 +215,24 @@ ul.eventList div{
 	color:#ffffff;
 	background-color: #444444;
 	padding: 29px 0 128px;
-	margin-top: 30px;
+	margin-top: 70px;
 	font-size: 14px;
 	line-height: 16px;
 	font-family:"minion-pro",times,serif;
-	text-align: center;
 	box-shadow: 0px -1px 5px rgba(0,0,0,0.3);
 }
 
 ul.eventType{
 	padding-bottom: 30px;
 	border-bottom: 1px solid #535353;
-	text-align: left;
 }
 
 #footer ul,#footer li {
 	float: none;
+}
+
+.eventTypeList li{
+	margin-top: 8px;
 }
 
 
@@ -240,50 +242,73 @@ ul.eventType{
 	margin-left: 28px;
 }
 
-li.eventTypeList li:first-child, .copyRight {
+#footer h3, .copyRight {
 	font-family:arial,helvetica,"sans-serif";
-	font-weight: normal;
-	line-height: 20px;
+	font-size: 14px;
+	line-height: 24px;
 	padding-left: 5px;
 	color: #b2b2b2;
 }
 
-li.eventTypeList{
-	margin: 9px 0;
-}
-
-li.eventTypeList li.firstExtOffer{
-	margin-top: 10px;
-}
-
-li.extentedOffers{
+.extentedOffers{
+	margin-top: 29px;
 	font-weight: bold;
 }
 
 ul.footerNavigation{
-	margin: 0 150px;
+	width: 585px;
+	margin: 19px auto 0;
+	font-size: 12px;
+}
+
+.copyRight{
+	text-align: center;
+	display: block;
 }
 
 #footer ul.footerNavigation li{
 	float: left;
 	border-left: 1px solid #ffffff;
-	padding: 0 5px;
+	padding: 0 8px;
 	font-family:arial,helvetica,"sans-serif";
 	font-weight: bold;
 }
 #footer ul.footerNavigation li:first-child{
 	border: 0;
-	padding-left: 0px;
 }
 
 a:hover{
 	color: #ff0000;
+	background-color: #ffffff;
 }
 
-.navigation a:hover, .themesNavigation a:hover{
-	color: #000000;
+.navigation a:hover{
+	color: #ffffff;
+	background-color: #ff0000;
 }
 
-.socailIcons a:hover{
-	background-color: #000000;
+.facebookLogo :hover{
+	background-image:url("../images/logo_facebook_red.png");
+	border-radius: 12px;
+	border: 1px solid #ff0000;
 }
+
+.twitterLogo :hover{
+	background-image:url("../images/logo_twitter_red.png");
+	border-radius: 12px;
+	border: 1px solid #ff0000;
+}
+
+.pinLogo :hover{
+	background-image:url("../images/logo_p_red.png");
+	border-radius: 12px;
+	border: 1px solid #ff0000;
+}
+
+.googleLogo :hover{
+	background-image:url("../images/logo_google_plus_red.png");
+	border-radius: 12px;
+	border: 1px solid #ff0000;
+}
+
+
