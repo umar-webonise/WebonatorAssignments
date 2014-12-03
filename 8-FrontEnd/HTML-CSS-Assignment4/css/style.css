@@ -5,6 +5,7 @@
 
 a {
 	text-decoration: none;
+	color: #ffffff;
 }
 
 li{
@@ -235,7 +236,6 @@ ul.eventType{
 	float: left;
 	width: 162px;
 	margin-left: 28px;
-	color: #e2e2e2;
 }
 
 li.eventTypeList li:first-child, .copyRight {
@@ -255,7 +255,6 @@ li.eventTypeList li.firstExtOffer{
 }
 
 li.extentedOffers{
-	color: #ffffff;
 	font-weight: bold;
 }
 
@@ -268,10 +267,13 @@ ul.footerNavigation{
 	border-left: 1px solid #ffffff;
 	padding: 0 5px;
 	font-family:arial,helvetica,"sans-serif";
-	color: #ffffff;
 	font-weight: bold;
 }
 #footer ul.footerNavigation li:first-child{
 	border: 0;
 	padding-left: 0px;
+}
+
+a:hover{
+	color: #ff0000;
 }
