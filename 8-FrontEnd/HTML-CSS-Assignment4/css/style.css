@@ -191,7 +191,7 @@ ul.eventList h3{
 
 ul.eventList li{
 	width: 300px;
-	background-color: #000000;
+	background-color: #140e04;
 	margin-left: 20px;
 	padding-bottom: 21px;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
@@ -235,29 +235,37 @@ ul.eventType{
 	float: left;
 	width: 162px;
 	margin-left: 28px;
+	color: #e2e2e2;
 }
 
-li.eventTypeList li:first-child {
+li.eventTypeList li:first-child, .copyRight {
 	font-family:arial,helvetica,"sans-serif";
-	font-weight: bold;
+	font-weight: normal;
 	line-height: 20px;
-	padding-left: 10px;
-	color: grey;
-	
+	padding-left: 5px;
+	color: #b2b2b2;
 }
 
 li.eventTypeList li.firstExtOffer{
 	margin-top: 10px;
 }
 
+li.extentedOffers{
+	color: #ffffff;
+	font-weight: bold;
+}
+
 ul.footerNavigation{
-	margin: 0 auto;
+	margin: 0 150px;
 }
 
 #footer ul.footerNavigation li{
 	float: left;
 	border-left: 1px solid #ffffff;
 	padding: 0 5px;
+	font-family:arial,helvetica,"sans-serif";
+	color: #ffffff;
+	font-weight: bold;
 }
 #footer ul.footerNavigation li:first-child{
 	border: 0;
