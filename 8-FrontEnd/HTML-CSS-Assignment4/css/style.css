@@ -246,6 +246,10 @@ li.eventTypeList li:first-child, .copyRight {
 	color: #b2b2b2;
 }
 
+li.eventTypeList{
+	margin: 9px 0;
+}
+
 li.eventTypeList li.firstExtOffer{
 	margin-top: 10px;
 }
