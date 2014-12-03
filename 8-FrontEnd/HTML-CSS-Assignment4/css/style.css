@@ -64,7 +64,7 @@ ul.navigation, ul.socailIcons,div.rightArrowImg{
 
 .socailIcons a{
 	background-repeat: no-repeat;
-	background-color: #ec171f;
+	background-color: #ff0000;
 	border-radius: 12px;
 	box-sizing: border-box;
 	width: 24px;
@@ -178,7 +178,9 @@ ul.eventList{
 ul.eventList h2{
 	font-size: 18px;
 	line-height: 20px;
-	font-family:arial,helvetica,"sans-serif";
+	font-family:arial,helvetica,"saa:hover{
+	color: #ff0000;
+}ns-serif";
 	margin-bottom: 10px;
 }
 
@@ -276,4 +278,12 @@ ul.footerNavigation{
 
 a:hover{
 	color: #ff0000;
+}
+
+.navigation a:hover, .themesNavigation a:hover{
+	color: #000000;
+}
+
+.socailIcons a:hover{
+	background-color: #000000;
 }
