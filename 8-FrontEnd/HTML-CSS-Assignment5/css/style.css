@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li{
+	list-style-type: none;
+}
+
+li{
+	float: left;
+}
+
+.container {
+	width: 940px;
+	margin: auto;
+	position: relative;
+}
+
+#banner .container{
+	box-shadow: 0px 2px 5px 1px #b9c1c5;
+}
+
+.clearFix, ul li.clearFix {
+	width: 0px;
+	height: 0px;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	float: none;
+	clear: both;
+}
+
+body {
+	background-image: url("../images/html_page_background.jpg");
+}
+
+.seeHawkLogo{
+	background: url("../images/logo_see_hawk.png") no-repeat center top;
+	height: 143px;
+	width: 385px;
+	display: block;
+	position: absolute;
+	top:4px;
+}
+
+#header {
+	background: #d0ecf9 url("../images/header_gradient.jpg") repeat-x;
+	border-bottom: 1px solid #ffffff;
+}
+
+
+.socialIcon, .topNavigation {
+	float: right;
+}
+
+.socialIcon {
+	margin-top: 19px;
+}
+
+.socialIcon li{
+	width:25px;
+	margin-left: 9px;
+}
+
+.socialIcon a {
+	height:27px;
+	display: block;
+}
+
+.facebookLogo{
+	background: url("../images/facebook_logo.png") no-repeat center top;
+}
+
+.twiterLogo{
+	background: url("../images/twitter_logo.png") no-repeat center top;
+}
+
+.topNavigation {
+	margin-top: 3px;
+	font-family:arial,helvetica,"sans-serif";
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0px 2px #ffffff;
+}
+
+.topNavigation a{
+	color: #2093d5;
+	display: block;
+	margin-top: 40px;
+}
+
+.topNavigation li {
+    background:url("../images/header_nav_sep.png") no-repeat top left;
+    padding:0 10px;
+    height:65px;
+}
+
+.topNavigation li:first-child {
+	padding-left: 0px;
+	background:url("");
+}
+
+#banner{
+	background: url("../images/banner_img.jpg") no-repeat center top;
+	box-shadow: 0px 10px 20px 0px #b3c1cf inset;
+}
+
+#banner .container {
+	height: 323px; 
+}
+
