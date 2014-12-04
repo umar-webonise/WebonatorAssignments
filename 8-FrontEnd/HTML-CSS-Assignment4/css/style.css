@@ -143,7 +143,7 @@ div.textContent p{
 	font-family:arial,helvetica,"sans-serif";
 	font-weight: lighter;
 	border:2px solid #ffffff;
-	background: url("../images/go_icon.png") no-repeat right 15px center;
+	
 	width:216px;
 	border-radius: 5px;
 }
@@ -154,6 +154,7 @@ div.textContent p{
 
 .themesNavigation a{
 	padding: 15px 13px 15px 19px;
+	background: url("../images/go_icon.png") no-repeat right 15px center;
 	display: block;
 }
 
@@ -198,7 +199,7 @@ ul.eventList li{
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
 
-ul.eventList li:first-child ,#footer li.eventTypeList:first-child {
+ul.eventList li:first-child ,#footer .eventTypeList:first-child {
 	margin-left: 0px;
 }
 
@@ -223,7 +224,7 @@ div.gallaryTxt{
 	box-shadow: 0px -1px 5px rgba(0,0,0,0.3);
 }
 
-ul.eventType{
+.eventType{
 	padding-bottom: 30px;
 	border-bottom: 1px solid #535353;
 }
@@ -237,18 +238,22 @@ ul.eventType{
 }
 
 
-#footer li.eventTypeList {
+#footer .eventTypeList {
 	float: left;
 	width: 162px;
 	margin-left: 28px;
 }
 
-#footer h3, .copyRight {
+#footer h3 , .copyRight {
 	font-family:arial,helvetica,"sans-serif";
 	font-size: 14px;
 	line-height: 24px;
 	padding-left: 5px;
 	color: #b2b2b2;
+}
+
+.copyRight{
+	padding: 0px;
 }
 
 .extentedOffers{
@@ -292,25 +297,25 @@ a:hover{
 	background: #ffffff url("../images/go_icon_red.png") no-repeat right 15px center;
 }
 
-.facebookLogo :hover{
+.facebookLogo:hover{
 	background-image:url("../images/logo_facebook_red.png");
 	border-radius: 12px;
 	border: 1px solid #ff0000;
 }
 
-.twitterLogo :hover{
+.twitterLogo:hover{
 	background-image:url("../images/logo_twitter_red.png");
 	border-radius: 12px;
 	border: 1px solid #ff0000;
 }
 
-.pinLogo :hover{
+.pinLogo:hover{
 	background-image:url("../images/logo_p_red.png");
 	border-radius: 12px;
 	border: 1px solid #ff0000;
 }
 
-.googleLogo :hover{
+.googleLogo:hover{
 	background-image:url("../images/logo_google_plus_red.png");
 	border-radius: 12px;
 	border: 1px solid #ff0000;
