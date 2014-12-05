@@ -19,15 +19,14 @@ li{
 
 .container {
 	width: 940px;
-	margin: auto;
-	position: relative;
+	margin: 0 auto;
 }
 
 #banner .container, #content .container, #footer .container{
 	box-shadow: 0px 2px 5px 1px #b9c1c5;
 }
 
-.clearFix, ul li.clearFix {
+.clearFix, #content ul li.clearFix {
 	width: 0px;
 	height: 0px;
 	border: 0px;
@@ -41,6 +40,15 @@ body {
 	background-image: url("../images/html_page_background.jpg");
 }
 
+#header {
+	background: #d0ecf9 url("../images/header_gradient.jpg") repeat-x;
+	border-bottom: 1px solid #ffffff;
+}
+
+#header .container{
+	position: relative;
+}
+
 .seeHawkLogo{
 	background: url("../images/logo_see_hawk.png") no-repeat center top;
 	height: 143px;
@@ -49,12 +57,6 @@ body {
 	position: absolute;
 	top:4px;
 }
-
-#header {
-	background: #d0ecf9 url("../images/header_gradient.jpg") repeat-x;
-	border-bottom: 1px solid #ffffff;
-}
-
 
 .socialIcon, .topNavigation {
 	float: right;
@@ -109,7 +111,12 @@ body {
 
 #banner{
 	background: url("../images/banner_img.jpg") no-repeat center top;
-	box-shadow: 0px 10px 20px 0px #b3c1cf inset;
+	box-shadow:0px 5px 10px -2px #b3c1cf inset;
+}
+
+#banner {
+    //-webkit-box-shadow: 10px 0 5px -2px #888;
+            //box-shadow: 10px 0 5px -2px #000;
 }
 
 #banner .container {
@@ -118,6 +125,7 @@ body {
 }
 
 .textContent{
+	float: left;
 	margin: 75px 0 0 11px;
 	width:444px;
 }
@@ -126,6 +134,7 @@ h1{
 	font-size: 26px;
 	font-family:arial,helvetica,"sans-serif";
 	color: #209bd4;
+	text-shadow: 1px 1px black;
 }
 
 h2{
@@ -143,25 +152,39 @@ h2{
 
 #content li{
 	margin-left: 10px;
+	width: 300px;
 }
 
 
 #content .container div {
-	width: 300px;
 	height: 200px;
+	position: relative;
+}
+
+#content h3{
+	width: 250px;
+	color: #fff;
+	font-size: 20px;
+	font-family:arial,helvetica,"sans-serif";
+	font-weight: bolder;
+	text-shadow: 0px 2px 3px #000;
+	position: absolute;
+	bottom:12px;
+	left: 12px;
 }
 
 #content p{
 	margin:29px 0 0  12px;
-	width: 252px;
+	width: 276px;
 	font-size: 14px;
+	line-height: 26px;
 	font-family:arial,helvetica,"sans-serif";
 	color: #666;
 }
 
 
 #footer .container{
-	padding: 14px 0 104px;
+	padding: 14px 0px 104px;
 	background-color: #fff;
 	border-top: 1px solid #cedfe7;
 	font-size: 11px;
@@ -169,3 +192,24 @@ h2{
 	font-weight: lighter;
 }
 
+#footer .container ul{
+	float: left;
+	margin-left: 22px;
+}
+
+#footer li{
+	margin-right: 18px;
+}
+
+div.copyRight{
+	float: right;
+	margin-right: 22px;
+}
+
+#footer a {
+	color: #000;
+}
+
+#footer a:hover,#header a:hover{ 
+    color: #000080;
+}
