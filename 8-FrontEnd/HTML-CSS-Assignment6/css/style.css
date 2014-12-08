@@ -1,0 +1,246 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+li{
+	float: left;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.clearFix, ul li.clearFix{
+	width: 0px;
+	height: 0px;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	float: none;
+	clear: both;
+}
+
+#header {
+	background:#fbfbfb;
+	font-family:helvetica,arial,"sans-serif";
+	font-size: 14px;
+	line-height: 16px;
+	color: #000;
+}
+
+.ezmLogo {
+	width: 159px;
+	height: 35px;
+	margin:4px 0 0 10px;
+	background: url("../images/EZ_logo.png") no-repeat center top;
+	display: block;
+	float: left;
+}
+
+
+#header ul{
+	float: left;
+	margin-left: 30px;
+}
+
+#header ul li {
+	border-left: 1px solid #e5e5e5;
+}
+
+#header ul li a{
+	padding: 16px 20px;
+	color: #000;
+	display: block;
+}
+
+.greenButton {
+	background-color: #88bb33;
+	border-radius: 3px;
+}
+
+.greenButton a{
+	border-radius: 3px;
+	padding: 8px 15px;
+	color: #fff;
+	display: block;
+}
+
+#header .greenButton, .rightElements a.phoneIcon, .rightElements span,.moveOptions .orangeButton, .orCircle {
+	float: left;
+}
+
+.rightElements a.phoneIcon{
+	margin-top: 7px;
+	width: 15px;
+	height: 15px;
+	background: url("../images/phone_icon.png") no-repeat center top;
+	display: block;
+}
+
+.rightElements span {
+	margin: 0 20px 0 10px;
+	line-height: 28px;
+}
+
+.rightElements {
+	margin-top: 8px;
+	float: right;
+}
+
+#banner{
+	background: #fff url("../images/banner.jpg") no-repeat center top;
+	height: 320px;
+	box-shadow:0px 5px 10px -2px rgba(0,0,0,0.15) inset;
+}
+
+.navigation {
+	background: #fff;
+	box-shadow:0px -5px 10px -2px rgba(0,0,0,0.15);
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.navigation .container{
+	position: relative;
+	height: 188px;
+}
+
+.navigationContent{
+	position: absolute;
+	top:-50px;
+	left: 111px;
+}
+
+.moverOrderSteps {
+	background: url("../images/nav_list_sep.jpg") no-repeat left 114px top 49px;
+}
+
+.moverOrderSteps li{
+	width: 144px;
+	margin-left: 68px;
+}
+
+.moverOrderSteps li:first-child{
+	margin-left: 0px;
+}
+
+.moverOrderSteps div {
+	margin: 0 auto 28px;
+	width:84px ;
+	height:101px;
+}
+
+.moverOrderSteps p{
+	text-align: center;
+	font-size: 16px;
+	line-height: 22px;
+	font-style: italic;
+	font-weight: bold;
+	font-family: "Times New Roman", Georgia, Serif;
+	color: #888;
+}
+
+.moveOptions{
+	margin: 41px 0 0 119px;
+}
+
+.orangeButton {
+	background: #ee7700;
+	border-radius: 5px;
+	width: 200px;
+}
+
+.carIcon{
+	background: #ee7700 url("../images/car_icon.png") no-repeat left 27px center;
+}
+
+.homeIcon{
+	background: #ee7700 url("../images/home_icon.png") no-repeat left 27px center;
+}
+
+.orCircle {
+	width: 30px;
+	height: 30px;
+	margin: 10px 25px 0;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	font-family: "Times New Roman", Georgia, Serif;
+	border-radius: 15px;
+	background: #bbb ;
+}
+
+.orangeButton a{
+	font-family:helvetica,arial,"sans-serif";
+	font-weight: bold;
+	color: #fff;
+	font-size: 20px;
+	line-height: 22px;
+	padding: 18px 0 18px 60px;
+	border-radius: 5px;
+	display: block;
+}
+
+#content{
+	padding: 94px 0 326px 0;
+	background: #f5f5f5;
+}
+
+.leftArrow{
+	display: block;
+	margin: 128px 38px 0 17px;
+	height: 50px;
+	width: 25px;
+	background: url("../images/left_arrow.png") no-repeat center top;
+	float: left;
+}
+
+.contentSlider{
+	width: 780px;
+	height: 305px;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.20);
+	float: left;	
+}
+
+.rightArrow{
+	display: block;
+	margin: 128px 0 0 38px;
+	height: 50px;
+	width: 25px;
+	background: url("../images/right_arrow.png") no-repeat center top;
+	float: left;
+}
+
+.sliderLoadCircle{
+	margin: 9px auto 0 ;
+	width: 51px;
+}
+
+.sliderLoadCircle li{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #bbb;
+	margin-left: 7px;
+}
+
+h2{
+	margin: 66px 0 0 214px;
+	font-size: 36px;
+	font-weight: lighter;
+	font-family: Century Gothic, Helvetica, sans-serif;
+	color: #222222;
+}
