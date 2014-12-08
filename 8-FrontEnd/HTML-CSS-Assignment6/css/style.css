@@ -33,9 +33,7 @@ li{
 
 #header {
 	background:#fbfbfb;
-	font-family:helvetica,arial,"sans-serif";
-	font-size: 14px;
-	line-height: 16px;
+	
 	color: #000;
 }
 
@@ -60,6 +58,9 @@ li{
 
 #header ul li a{
 	padding: 16px 20px;
+	font-family:helvetica,arial,"sans-serif";
+	font-size: 14px;
+	line-height: 16px;
 	color: #000;
 	display: block;
 }
@@ -67,16 +68,20 @@ li{
 .greenButton {
 	background-color: #88bb33;
 	border-radius: 3px;
+	float: left;
 }
 
 .greenButton a{
 	border-radius: 3px;
 	padding: 8px 15px;
+	font-family:helvetica,arial,"sans-serif";
+	font-size: 14px;
+	line-height: 16px;
 	color: #fff;
 	display: block;
 }
 
-#header .greenButton, .rightElements a.phoneIcon, .rightElements span,.moveOptions .orangeButton, .orCircle {
+.rightElements a.phoneIcon, .rightElements span,.moveOptions .orangeButton, .orCircle {
 	float: left;
 }
 
@@ -96,6 +101,7 @@ li{
 .rightElements {
 	margin-top: 8px;
 	float: right;
+	width: 200px;
 }
 
 #banner{
@@ -238,9 +244,104 @@ li{
 }
 
 h2{
-	margin: 66px 0 0 214px;
+	margin: 66px 0 41px;
+	text-align: center;
 	font-size: 36px;
 	font-weight: lighter;
-	font-family: Century Gothic, Helvetica, sans-serif;
+	font-family: arial, Helvetica, sans-serif;
 	color: #222222;
 }
+
+.advantagesList li{
+	width: 205px;
+	margin-left: 28px;
+}
+
+.advantagesList li:first-child{
+	margin-left: 0px;
+}
+
+.advantagesList div{
+	width: 70px;
+	height: 70px;
+	margin: 0 auto 23px;
+}
+
+.advantagesList p {
+	text-align: center;
+	font-family:helvetica,arial,"sans-serif";
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 18px;
+	color: #444;
+}
+
+.advantagesList span {
+	display: block;
+}
+
+#content .container {
+	position: relative;
+}
+
+.registration {
+	width: 711px;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.20);
+	background: #fff;
+	padding: 20px 0 52px 30px;
+	position: absolute;
+	bottom: -384px;
+	left: 110px;
+}
+
+.registration h3 {
+	text-align: center;
+	font-size: 24px;
+	font-weight: lighter;
+	font-family: arial, Helvetica, sans-serif;
+	color: #222;
+}
+
+
+.registration div.inputText{
+	width: 298px;
+	height: 10px;
+	margin:50px 0 0 20px;
+	border-bottom: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	float: left;
+}
+
+.registration input {
+	font-size: 13px;
+	line-height: 24px;
+	width: 276px;
+	margin: auto;
+	display: block;
+	background: transparent;
+	position: relative;
+	bottom:10px;
+}
+
+div.inputText input:focus{
+	outline: none;
+}
+
+.registration .greenButton {
+	margin:30px 0 0 20px;	
+}
+
+#footer{
+	background: #444;
+	padding: 98px 0 38px;
+}
+
+#footer span{
+	display: block;
+	text-align: center;
+	font-size:12px;
+	color: #888;
+}
+
+
